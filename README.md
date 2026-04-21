@@ -1,4 +1,4 @@
-# Automacao_Estapar
+# Automação_Estapar
 Teste Técnico - QA (Automação de Testes Web)
 
 **Autor:** Maxwell Alisson Soares Doroteu  
