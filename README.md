@@ -113,13 +113,25 @@ pip install robotframework robotframework-seleniumlibrary robotframework-faker p
 
 Atenção (Uso do PyAutoGUI): Durante a execução do CTA_06, que utiliza comandos de automação gráfica (mouse e teclado via OS), a tela do computador não deve ser bloqueada ou minimizada, e o foco deve ser mantido no navegador para garantir que o preenchimento dos dados ocorra perfeitamente.
 
+## 🧰 Ambiente de desenvolvimento
+
+### IDE
+- Visual Studio Code
+### Extensões
+- Python
+- Robot Code
+- Material Icon Theme
+- Dracula Theme
+- Portuguese (Brazil) Language Pack
+
 🚀 Possível Evolução
 - Integração com CI/CD (GitHub Actions, Jenkins)
 - Execução headless
 - Execução paralela
 
 ▶️ Como Executar os Testes
-Para rodar a suíte completa de testes, abra o terminal no diretório raiz do projeto e execute:
+Após a instalação das dependências necessárias do projeto, botão direito no arquivo "Login.robot" que se encontra na pasta "Testes", e selecionar a opção "Executar Testes" para executar todos os testes do projeto.
+Para rodar a suíte completa de testes via terminal, abra o terminal no diretório raiz do projeto e execute:
 Bash
 robot -d ./logs nome_do_arquivo.robot
 •	O parâmetro -d ./logs garantirá que os relatórios em HTML (log.html e report.html) gerados pelo Robot Framework sejam salvos em uma pasta organizada.
