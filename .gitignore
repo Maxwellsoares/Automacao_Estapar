@@ -1,0 +1,35 @@
+node_modules
+output.xml
+report.html
+Evidencias/
+libspecs/
+.vscode/
+Certificações/
+venv/
+READM.md
+*.log
+.project
+interactvive_console_outuput.xml
+jab_wrapper.log
+.metadata
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Robot Ouput files
+my_user_and_passwords.robot
+log.html
+output.xml
+report.html
+Temp.html
+log.html
