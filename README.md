@@ -155,7 +155,7 @@ Para que a automação flua de ponta a ponta sem erros, os testes devem ser exec
 Abaixo estão descritos os cenários validados nesta suíte, escritos no formato Behavior-Driven Development (BDD) para facilitar a compreensão por todos os envolvidos no ciclo de desenvolvimento.
 
 
-# 👤 Épico: Gestão de Contas (Cadastro e Login)
+# 🧪 Fluxo: Gestão de Contas (Cadastro e Login)
 
 ## CTA_01 - Cadastro de Usuário
 
@@ -222,7 +222,7 @@ Este script de teste tem por objetivo validar o comportamento do sistema ao info
 
 ---
 
-# 🛍️ Épico: Jornada de Compra (Carrinho e Checkout)
+# 🧪 Fluxo: Jornada de Compra (Carrinho e Checkout)
 
 ## CTA_05 - Adicionar Produto ao Carrinho
 
