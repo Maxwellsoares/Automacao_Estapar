@@ -38,35 +38,37 @@ A arquitetura de testes foi desenvolvida para simular a interação real do usu�
 
 ## 📁 Estrutura do Projeto
 
+```bash
 .
 ├── Funcionalidades/
-│   ├── Login.resource
+│   └── Login.resource
 │
 ├── Metodos_Globais/
-│   ├── Metodos_Globais.resource
+│   └── Metodos_Globais.resource
 │
 ├── Pages/
 │   ├── Componentes/
 │   │   ├── Login.resource
-│   │   ├── Menu_Lateral.resource
+│   │   └── Menu_Lateral.resource
 │   │
-│   ├── Login_page.resource
+│   └── Login_page.resource
 │
 ├── Resources/
 │   ├── Base.resource
-│   ├── ScreenshotLibrary.py
+│   └── ScreenshotLibrary.py
 │
 ├── TestData/
-│   ├── JSON_config.resource
+│   └── JSON_config.resource
 │
 ├── Testes/
-│   ├── Login.robot
+│   └── Login.robot
 │
 ├── results/
 ├── venv/
 ├── .gitignore
 ├── robot.toml
-├── interactive_console_output.xml
+└── interactive_console_output.xml
+```
 
 ## 📌 Organização das Pastas
 
