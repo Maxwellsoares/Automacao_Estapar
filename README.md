@@ -10,6 +10,8 @@ Teste Técnico - QA (Automação de Testes Web)
 
 ---
 
+As evidências detalhadas de execução estão disponíveis no arquivo Magento_Log.pdf e contêm todos os steps e validações usados em todos os Casos de Testes Automatizados, facilitando a visualização direta pelo GitHub caso desejado.
+
 ## 📌 Status do Projeto
 - ✔️ Completo  
 - 🧪 Tipo: Automação E2E  
