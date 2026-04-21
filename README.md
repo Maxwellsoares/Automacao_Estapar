@@ -143,72 +143,105 @@ Para que a automação flua de ponta a ponta sem erros, os testes devem ser exec
 Abaixo estão descritos os cenários validados nesta suíte, escritos no formato Behavior-Driven Development (BDD) para facilitar a compreensão por todos os envolvidos no ciclo de desenvolvimento.
 
 
-👤 Épico: Gestão de Contas (Cadastro e Login)
+# 👤 Épico: Gestão de Contas (Cadastro e Login)
 
-CTA_01_Cadastro_Usuario
-•	Documentação: Este script de teste tem por objetivo validar o cadastro de novo usuário com geração de massa de dados dinâmica.
-•	Passos:
-o	Dado que eu acesse a página inicial da loja
-o	Quando aciono o botão "Create an Account"
-o	E preencho o campo "First Name"
-o	E preencho o campo "Last Name"
-o	E preencho o campo "Email" com email aleatorio
-o	E preencho o campo "Password" e "Confirm Password"
-o	E aciono o botão "Create an Account" para registro da conta
-o	Então a conta de usuário é criada
+## CTA_01 - Cadastro de Usuário
 
-CTA_02_Login
-•	Documentação: Este script de teste tem por objetivo validar o login com credenciais válidas ao sistema de compras online, usando os dados dinâmicos que são no CTA_01.
-•	Passos:
-o	Dado que eu acesse a página inicial da loja
-o	Quando aciono o botão "Sign In"
-o	E preencho o campo "Email" e "Password" para logar
-o	E aciono o botão "Sign In" para login
-o	Então o usuário é logado e redirecionado para a página inicial do site
+**Documentação:**
+Este script de teste tem por objetivo validar o cadastro de novo usuário com geração de massa de dados dinâmica.
 
+**Passos:**
 
-CTA_03_Login_Senha_Invalida_Fluxo_Excecao
-•	Documentação: Este script de teste tem por objetivo validar o comportamento do sistema ao informar uma senha incorreta durante o login.
-•	Passos:
-o	Dado que eu acesse a página inicial da loja
-o	Quando aciono o botão "Sign In"
-o	E preencho o campo "Email" e "Password" para login
-o	E aciono o botão "Sign In" para login
-o	Então é apresentada a mensagem "The account sign-in was incorrect or your account is disabled temporarily. Please wait and try again later"
+* Dado que eu acesse a página inicial da loja
+* Quando aciono o botão "Create an Account"
+* E preencho o campo "First Name"
+* E preencho o campo "Last Name"
+* E preencho o campo "Email" com email aleatório
+* E preencho o campo "Password" e "Confirm Password"
+* E aciono o botão "Create an Account" para registro da conta
+* Então a conta de usuário é criada
 
-CTA_04_Login_Email_Invalido_Fluxo_Excecao
-•	Documentação: Este script de teste tem por objetivo validar o comportamento do sistema ao informar um e-mail incorreto/inexistente durante o login.
-•	Passos:
-o	Dado que eu acesse a página inicial da loja
-o	Quando aciono o botão "Sign In"
-o	E preencho campo "Email" e "Password" para login
-o	E aciono o botão "Sign In" para login
-o	Então é apresentada a mensagem "The account sign-in was incorrect or your account is disabled temporarily. Please wait and try again later"
+---
 
+## CTA_02 - Login
 
-🛍️ Épico: Jornada de Compra (Carrinho e Checkout)
-CTA_05_Adicionar_Produto_Carrinho
-•	Documentação: Este script de teste tem por objetivo validar a adição de um produto válido ao carrinho de compra logado, usando os dados dinâmicos que são criados no CTA_01.
-•	Passos:
-o	Dado que eu acesse a página inicial da loja
-o	Quando aciono o botão "Sign In"
-o	E preencho o campo "Email" e "Password" para logar
-o	E aciono o botão "Sign In" para login
-o	E seleciono um item para compra na pagina inicial
-o	E adicionar ao carrinho
-o	Então o produto é adicionado ao carrinho
+**Documentação:**
+Este script de teste tem por objetivo validar o login com credenciais válidas ao sistema de compras online, usando os dados dinâmicos criados no CTA_01.
 
-CTA_06_Finalizacao_Compra_Checkout
-•	Documentação: Este script de teste tem por objetivo validar o fluxo completo (End-to-End) de checkout e finalização de pedido de um produto previamente adicionado, usando os dados dinâmicos que são criados no CTA_01.
-•	Passos:
-o	Dado que eu acesse a página inicial da loja
-o	Quando aciono o botão "Sign In"
-o	E preencho o campo "Email" e "Password" para logar
-o	E aciono o botão "Sign In" para login
-o	E seleciono um item para compra na pagina inicial
-o	E visualizo o carrinho com o produto já adicionado do step anterior
-o	E aciono o botão "Proceed to Checkout"
-o	E preencho os campos obrigatórios para "Endereço de envio"
-o	E aciono o botão "Next"
-o	E aciono o botão "Place Order" para finalização da compra
-o	Então a compra é finalizada e é apresentado a mensagem de sucesso na tela "Thank you for your purchase!"
+**Passos:**
+
+* Dado que eu acesse a página inicial da loja
+* Quando aciono o botão "Sign In"
+* E preencho o campo "Email" e "Password"
+* E aciono o botão "Sign In"
+* Então o usuário é logado e redirecionado para a página inicial do site
+
+---
+
+## CTA_03 - Login com Senha Inválida
+
+**Documentação:**
+Este script de teste tem por objetivo validar o comportamento do sistema ao informar uma senha incorreta durante o login.
+
+**Passos:**
+
+* Dado que eu acesse a página inicial da loja
+* Quando aciono o botão "Sign In"
+* E preencho o campo "Email" e "Password" inválidos
+* E aciono o botão "Sign In"
+* Então é apresentada a mensagem:
+  "The account sign-in was incorrect or your account is disabled temporarily. Please wait and try again later"
+
+---
+
+## CTA_04 - Login com Email Inválido
+
+**Documentação:**
+Este script de teste tem por objetivo validar o comportamento do sistema ao informar um e-mail incorreto/inexistente durante o login.
+
+**Passos:**
+
+* Dado que eu acesse a página inicial da loja
+* Quando aciono o botão "Sign In"
+* E preencho o campo "Email" inválido e "Password"
+* E aciono o botão "Sign In"
+* Então é apresentada a mensagem:
+  "The account sign-in was incorrect or your account is disabled temporarily. Please wait and try again later"
+
+---
+
+# 🛍️ Épico: Jornada de Compra (Carrinho e Checkout)
+
+## CTA_05 - Adicionar Produto ao Carrinho
+
+**Documentação:**
+Este script de teste tem por objetivo validar a adição de um produto válido ao carrinho de compra logado, usando os dados dinâmicos criados no CTA_01.
+
+**Passos:**
+
+* Dado que eu acesse a página inicial da loja
+* Quando realizo login
+* E seleciono um item para compra na página inicial
+* E adiciono o produto ao carrinho
+* Então o produto é adicionado ao carrinho
+
+---
+
+## CTA_06 - Finalização de Compra (Checkout)
+
+**Documentação:**
+Este script de teste tem por objetivo validar o fluxo completo (End-to-End) de checkout e finalização de pedido de um produto previamente adicionado.
+
+**Passos:**
+
+* Dado que eu acesse a página inicial da loja
+* Quando realizo login
+* E seleciono um item para compra
+* E visualizo o carrinho com o produto já adicionado
+* E aciono o botão "Proceed to Checkout"
+* E preencho os campos obrigatórios para "Endereço de envio"
+* E aciono o botão "Next"
+* E aciono o botão "Place Order"
+* Então a compra é finalizada
+* E é apresentada a mensagem: "Thank you for your purchase!"
+
