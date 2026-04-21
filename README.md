@@ -65,11 +65,11 @@ A arquitetura de testes foi desenvolvida para simular a interação real do usu�
 ├── Testes/
 │   └── Login.robot
 │
-├── results/
-├── venv/
 ├── .gitignore
-├── robot.toml
-└── interactive_console_output.xml
+├── Magento_Log.pdf
+├── Magento_Log_Execucao.html
+├── Projeto_Magento.pdf
+├── README.md
 ```
 
 ## 📌 Organização das Pastas
