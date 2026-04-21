@@ -170,10 +170,11 @@ Este script de teste tem por objetivo validar o cadastro de novo usuário com ge
 * Quando aciono o botão "Create an Account"
 * E preencho o campo "First Name"
 * E preencho o campo "Last Name"
-* E preencho o campo "Email" com email aleatório
+* E preencho o campo "Email" com email aleatorio
 * E preencho o campo "Password" e "Confirm Password"
 * E aciono o botão "Create an Account" para registro da conta
 * Então a conta de usuário é criada
+
 
 ---
 
@@ -186,9 +187,9 @@ Este script de teste tem por objetivo validar o login com credenciais válidas a
 
 * Dado que eu acesse a página inicial da loja
 * Quando aciono o botão "Sign In"
-* E preencho o campo "Email" e "Password"
-* E aciono o botão "Sign In"
-* Então o usuário é logado e redirecionado para a página inicial do site
+* E preencho o campo "Email" e "Password"para logar
+* E aciono o botão "Sign In" para login
+* Então o usuário é logado e redirecionado para a pagina inicial do site
 
 ---
 
@@ -202,7 +203,7 @@ Este script de teste tem por objetivo validar o comportamento do sistema ao info
 * Dado que eu acesse a página inicial da loja
 * Quando aciono o botão "Sign In"
 * E preencho o campo "Email" e "Password" inválidos
-* E aciono o botão "Sign In"
+* E aciono o botão "Sign In" para login
 * Então é apresentada a mensagem:
   "The account sign-in was incorrect or your account is disabled temporarily. Please wait and try again later"
 
@@ -217,8 +218,8 @@ Este script de teste tem por objetivo validar o comportamento do sistema ao info
 
 * Dado que eu acesse a página inicial da loja
 * Quando aciono o botão "Sign In"
-* E preencho o campo "Email" inválido e "Password"
-* E aciono o botão "Sign In"
+* E preencho o campo "Email" inválido e "Password" para login
+* E aciono o botão "Sign In" para login
 * Então é apresentada a mensagem:
   "The account sign-in was incorrect or your account is disabled temporarily. Please wait and try again later"
 
@@ -234,11 +235,12 @@ Este script de teste tem por objetivo validar a adição de um produto válido a
 **Passos:**
 
 * Dado que eu acesse a página inicial da loja
-* Quando realizo login
-* E seleciono um item para compra na página inicial
-* E adiciono o produto ao carrinho
-* Então o produto é adicionado ao carrinho
-
+* Quando aciono o botão "Sign In"
+* E preencho o campo "Email" e "Password"para logar
+* E aciono o botão "Sign In" para login
+* E seleciono um item para compra na pagina inicial
+* E adicionar ao carrinho
+* Então o produto é adicionado ao carrinho 
 ---
 
 ## CTA_06 - Finalização de Compra (Checkout)
@@ -249,13 +251,14 @@ Este script de teste tem por objetivo validar o fluxo completo (End-to-End) de c
 **Passos:**
 
 * Dado que eu acesse a página inicial da loja
-* Quando realizo login
-* E seleciono um item para compra
-* E visualizo o carrinho com o produto já adicionado
+* Quando aciono o botão "Sign In"
+* E preencho o campo "Email" e "Password"para logar
+* E aciono o botão "Sign In" para login
+* E seleciono um item para compra na pagina inicial
+* E visualizo o carrinho com o produto ja adicionado do step anterior
 * E aciono o botão "Proceed to Checkout"
 * E preencho os campos obrigatórios para "Endereço de envio"
 * E aciono o botão "Next"
-* E aciono o botão "Place Order"
-* Então a compra é finalizada
-* E é apresentada a mensagem: "Thank you for your purchase!"
+* E aciono o botão "Place Order" para finalização da compra
+* Então a compra é finalizada e é apresentado a mensagem de sucesso na tela "Thank you for your purchase!"
 
