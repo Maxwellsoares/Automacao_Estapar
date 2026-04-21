@@ -5,8 +5,6 @@ Resource             ../../Resources/Base.resource
 Resource             ../../Funcionalidades/Metodos_Globais.resource
 Resource             ../../TestData/JSON_config.resource
  
-#[Documentação]      Informações do sistema
-#                    SINAFWEB
 
 # https://magento2-demo.magebit.com/
 # 
