@@ -12,6 +12,12 @@ READM.md
 interactvive_console_outuput.xml
 jab_wrapper.log
 .metadata
+results/
+output/
+log.html
+report.html
+*.html
+venv/
 
 # Environments
 .env
