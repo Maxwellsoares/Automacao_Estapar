@@ -94,15 +94,21 @@ Após a execução, são gerados automaticamente:
 - log.html → detalhamento completo dos passos
 - report.html → resumo da execução
 
-🛠️ Stack Tecnológico
+## 🛠️ Stack Tecnológico
+
 O framework de automação foi construído utilizando as seguintes ferramentas e bibliotecas:
-•	Linguagem: Python 3.x
-•	Framework Core: Robot Framework
-•	Interação Web: SeleniumLibrary
-•	Manipulação de Dados: String Library
-•	Massa de Dados Dinâmica: FakerLibrary (utilizada para geração de e-mails e dados de usuários únicos a cada execução)
-•	Interação de Interface (Desktop/OS): pyautogui (utilizado para mapear e interagir com elementos dinâmicos de formulário, como inserção de quadras, conjuntos e números residenciais em campos de endereço).
-O uso do PyAutoGUI foi adotado como workaround para limitações específicas de interação com campos dinâmicos não acessíveis via DOM, porém em cenários reais recomenda-se priorizar soluções baseadas em Selenium puro ou APIs.
+
+- **Linguagem:** Python 3.x  
+- **Framework Core:** Robot Framework  
+- **Interação Web:** SeleniumLibrary  
+- **Manipulação de Dados:** String Library  
+- **Massa de Dados Dinâmica:** FakerLibrary  
+  _(utilizada para geração de e-mails e dados de usuários únicos a cada execução)_  
+- **Interação de Interface (Desktop/OS):** pyautogui  
+  _(utilizado para mapear e interagir com elementos dinâmicos de formulário, como inserção de quadras, conjuntos e números residenciais em campos de endereço)_  
+
+> ⚠️ O uso do PyAutoGUI foi adotado como workaround para limitações específicas de interação com campos dinâmicos não acessíveis via DOM.  
+> Em cenários reais, recomenda-se priorizar soluções baseadas em Selenium puro ou APIs.
 
 ⚙️ Pré-requisitos e Configuração do Ambiente
 Antes de executar os testes, certifique-se de ter as seguintes dependências instaladas na sua máquina:
