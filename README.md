@@ -137,14 +137,30 @@ Atenção (Uso do PyAutoGUI): Durante a execução do CTA_06, que utiliza comand
 - Execução headless
 - Execução paralela
 
-▶️ Como Executar os Testes
-Após a instalação das dependências necessárias do projeto, botão direito no arquivo "Login.robot" que se encontra na pasta "Testes", e selecionar a opção "Executar Testes" para executar todos os testes do projeto.
-Para rodar a suíte completa de testes via terminal, abra o terminal no diretório raiz do projeto e execute:
-Bash
+## ▶️ Como Executar os Testes
+
+Após a instalação das dependências necessárias do projeto, siga uma das opções abaixo:
+
+### 🔹 Executar pela interface (VS Code ou similar)
+1. Clique com o botão direito no arquivo `Login.robot` (localizado na pasta `Testes`)
+2. Selecione a opção **"Executar Testes"**
+3. Isso executará todos os testes do projeto
+
+---
+
+### 🔹 Executar via terminal (suíte completa)
+
+Abra o terminal no diretório raiz do projeto e execute:
+
+```bash
 robot -d ./logs nome_do_arquivo.robot
-•	O parâmetro -d ./logs garantirá que os relatórios em HTML (log.html e report.html) gerados pelo Robot Framework sejam salvos em uma pasta organizada.
-Para executar um cenário de teste específico (por exemplo, apenas o fluxo de adição ao carrinho), utilize o comando usando a tag ou o nome do teste:
-Bash
+
+📌 O parâmetro -d ./logs garante que os relatórios em HTML (log.html e report.html) sejam salvos em uma pasta organizada.
+
+🔹 Executar um cenário específico
+
+Para rodar um teste específico (por exemplo, fluxo de adicionar produto ao carrinho):
+
 robot -d ./logs -t "CTA_05_Adicionar_Produto_Carrinho" nome_do_arquivo.robot
 
 
